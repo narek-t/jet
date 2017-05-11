@@ -1,16 +1,48 @@
 extends _layout
 block content
 	main.main-content
-		.sprite-example
-			h2.heading Sprite example
-			i.facebook-logo__icon
-			i.google-plus-logo__icon
-			i.instagram-logo__icon
-			i.twitter-logo__icon
-			i.youtube-logo__icon
-		.author-git
-			h2 Github link
-			a(href="https://github.com/narek-t/gulp-jade-sass" target="_blank") https://github.com/narek-t/gulp-jade-sass
+		.home-top.top-block(style="background-image: url(img/home-top.jpg)")
+			.container
+				.home-top__inner
+					h1.home-top__title Lorem ipsum dolor
+					p.home-top__subtitle Организация чартерных перелетов на частных самолетах и вертолетах
+					.order-form
+						.order-form__tabs
+							a.order-form__tabs-item.active(href="#") Самолёт
+							a.order-form__tabs-item(href="#") Вертолёт
+						.order-form__tables
+							table.order-form__table
+								tr
+									th.order-form__origin-city Откуда
+									th.order-form__destination-city Куда
+									th.order-form__date Дата
+									th.order-form__passengers Пассажиров
+								tr
+									td.order-form__origin-city
+										input.order-form__input.order-form__city(type="text" placeholder="Город / Аэропорт")
+									td.order-form__destination-city
+										input.order-form__input.order-form__city(type="text" placeholder="Город / Аэропорт")
+									td.order-form__date
+										input.order-form__input.order-form__date-input(type="text" placeholder="Дата")
+									td.order-form__passengers
+										input.order-form__input.order-form__passengers-input(type="number" value="1" min="1" step="1" pattern="[0-9]*" inputmode="numeric")
+										.input-number-less.spin
+										.input-number-more.spin
+								tr
+									td.order-form__origin-city
+										input.order-form__input.order-form__city(type="text" placeholder="Город / Аэропорт")
+									td.order-form__destination-city
+										input.order-form__input.order-form__city(type="text" placeholder="Город / Аэропорт")
+									td.order-form__date
+										input.order-form__input.order-form__date-input(type="text" placeholder="Дата")
+									td.order-form__passengers
+										input.order-form__input.order-form__passengers-input(type="number" value="1" min="1" step="1" pattern="[0-9]*" inputmode="numeric")
+										.input-number-less.spin
+										.input-number-more.spin
+
+
+
+
 
 
 

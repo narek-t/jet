@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="all-wrapper">
+      <header class="site-header">
+        <div class="container">
+          <div class="site-header__inner"><a href="#" class="logo"><img src="img/logo.png" alt=""/></a>
+            <ul class="main-menu">
+              <li><a href="#">СПЕЦ. ПРЕДЛОЖЕНИЯ</a></li>
+              <li><a href="#">Наш Флот</a></li>
+              <li><a href="#">АЭРОПОРТЫ</a></li>
+              <li><a href="#">ТРАНСФЕРЫ</a></li>
+              <li><a href="#">КАЛЕНДАРЬ</a></li>
+              <li><a href="#">О компании</a></li>
+            </ul><a href="#" class="header__tel">8 (800) 987-65-43<span>24/7</span></a>
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <div style="background-image: url(img/home-top.jpg)" class="home-top top-block">
+          <div class="container">
+            <div class="home-top__inner">
+              <h1 class="home-top__title">Lorem ipsum dolor</h1>
+              <p class="home-top__subtitle">Организация чартерных перелетов на частных самолетах и вертолетах</p>
+              <div class="order-form">
+                <div class="order-form__tabs"><a href="#" class="order-form__tabs-item active">Самолёт</a><a href="#" class="order-form__tabs-item">Вертолёт</a></div>
+                <div class="order-form__tables">
+                  <table class="order-form__table">
+                    <tr>
+                      <th class="order-form__origin-city">Откуда</th>
+                      <th class="order-form__destination-city">Куда</th>
+                      <th class="order-form__date">Дата</th>
+                      <th class="order-form__passengers">Пассажиров</th>
+                    </tr>
+                    <tr>
+                      <td class="order-form__origin-city">
+                        <input type="text" placeholder="Город / Аэропорт" class="order-form__input order-form__city"/>
+                      </td>
+                      <td class="order-form__destination-city">
+                        <input type="text" placeholder="Город / Аэропорт" class="order-form__input order-form__city"/>
+                      </td>
+                      <td class="order-form__date">
+                        <input type="text" placeholder="Дата" class="order-form__input order-form__date-input"/>
+                      </td>
+                      <td class="order-form__passengers">
+                        <input type="number" value="1" min="1" step="1" pattern="[0-9]*" inputmode="numeric" class="order-form__input order-form__passengers-input"/>
+                        <div class="input-number-less spin"></div>
+                        <div class="input-number-more spin"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="order-form__origin-city">
+                        <input type="text" placeholder="Город / Аэропорт" class="order-form__input order-form__city"/>
+                      </td>
+                      <td class="order-form__destination-city">
+                        <input type="text" placeholder="Город / Аэропорт" class="order-form__input order-form__city"/>
+                      </td>
+                      <td class="order-form__date">
+                        <input type="text" placeholder="Дата" class="order-form__input order-form__date-input"/>
+                      </td>
+                      <td class="order-form__passengers">
+                        <input type="number" value="1" min="1" step="1" pattern="[0-9]*" inputmode="numeric" class="order-form__input order-form__passengers-input"/>
+                        <div class="input-number-less spin"></div>
+                        <div class="input-number-more spin"></div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer"></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/lib/lib.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -61,9 +61,50 @@
 $rw: "Raleway";
 $sf: 'sf_ui__text';
 
+.btn {
+	padding: 0 30px;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font: 400 13px $rw;
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: 0;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background: #1b3f51;
+	}
+	
+}
 
+.btn--green {
+	color: #7ac03a;
+	border-color: #7ac03a;
+	&:hover {
+		background: #7ac03a;
+		color: #fff;
+	}
+}
 
+.simple-title {
+	margin: 0 0 60px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #556670;
+	font: 300 40px $rw;
+	letter-spacing: 0.075em;
+}
 
+.link-wrapper {
+	text-align: center;
+	margin-top: 40px;
+}
 
 
 

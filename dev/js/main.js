@@ -22,7 +22,15 @@ $(document).ready(function() {
 			$(this).val('1');
 	});
 
-	$('.order-form__date-input').datepicker({});
+	$('.order-form__date-input').datepicker({
+		format: 'dd/mm/yyyy',
+		autoclose: true,
+	});
 
+	$('.add-row').click(function(event) {
+		event.preventDefault();
+		var newRow = '<tr> <td class="order-form__origin-city"> <input type="text" placeholder="Город / Аэропорт" class="order-form__input order-form__city"/> </td><td class="order-form__destination-city"> <input type="text" placeholder="Город / Аэропорт" class="order-form__input order-form__city"/> </td><td class="order-form__date"> <input type="text" placeholder="Дата" class="order-form__input order-form__date-input"/> </td><td class="order-form__passengers"> <input type="number" value="1" min="1" step="1" pattern="[0-9]*" inputmode="numeric" class="order-form__input order-form__passengers-input"/> <div class="input-number-less spin"></div><div class="input-number-more spin"></div></td></tr>';
+		$('.order-form__table').append(newRow);
+	});
 
 });

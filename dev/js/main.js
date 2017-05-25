@@ -22,10 +22,16 @@ $(document).ready(function() {
 			$(this).val('1');
 	});
 
-	$('.order-form__date-input').datepicker({
-		format: 'dd/mm/yyyy',
-		autoclose: true,
-	});
+	var ifDate = $('.order-form__date-input').length;
+
+	if(ifDate) {
+		$('.order-form__date-input').datepicker({
+			format: 'dd/mm/yyyy',
+			autoclose: true,
+		});
+	}
+
+	
 
 	$('.add-row').click(function(event) {
 		event.preventDefault();
@@ -55,5 +61,35 @@ $(document).ready(function() {
 			$('.delete-row').removeClass('active');
 		}
 	});
+
+	$('.upcoming__table').DataTable({
+		"paging":   false,
+		"info":     false,
+		"searching":false,
+		responsive: true,
+		"aoColumnDefs": [
+          { 'bSortable': false, 'aTargets': [ 6 ] }
+       ]
+	});
+
+	$('.transfer__table').DataTable({
+		"paging":   false,
+		"info":     false,
+		"searching":false,
+		responsive: true,
+		"aoColumnDefs": [
+          { 'bSortable': false, 'aTargets': [ 1, 2, 3, 4, 5 ] }
+       ]
+	});
+
+
+	var ifTransferDate = $('.transfer__table-date').length;
+
+	if(ifTransferDate) {
+		$('.transfer__table-date').datepicker({
+			format: 'dd.mm.yyyy',
+			autoclose: true,
+		});
+	}
 
 });

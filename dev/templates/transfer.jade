@@ -1,0 +1,79 @@
+extends _layout
+block content
+	main.main-content
+		.page-top(style="background-image: url(img/transfer-bg.jpg)")
+			.container
+				h1.page__title Трансферы
+				p.page__description Lorem ipsum dolor sit amet, consectetur adipiscing
+		.container
+			.upcoming__table-wrapper
+				table.sortable-table.transfer__table
+					thead
+						tr
+							th Аэропорт
+							th Дата
+							th Транспорт
+							th Пункт назначения
+							th Стоимость
+							th
+					tbody
+						tr
+							td Внуково-3 (Москва)
+							td.table-arr
+								input.transfer__table-date(type="text" value="26.05.2017")
+							td.table-arr.transfer__table-select--wrapper
+								select.transfer__table-select
+									option(value="1") E-класс с водителем
+									option(value="2") S-класс с водителем
+									option(value="3") C-класс с водителем
+									option(value="4") B-класс с водителем
+							td Московский Кремль (красная площадь)
+							td 40 $
+							td
+								a(href="#") ЗАКАЗАТЬ
+						tr
+							td Шереметьево (Москва)
+							td.table-arr
+								input.transfer__table-date(type="text" value="26.05.2017")
+							td.table-arr.transfer__table-select--wrapper
+								select.transfer__table-select
+									option(value="1") E-класс с водителем
+									option(value="2") S-класс с водителем
+									option(value="3") C-класс с водителем
+									option(value="4") B-класс с водителем
+							td ВДНХ (центральный вход)
+							td 27 $
+							td
+								a(href="#") ЗАКАЗАТЬ
+						tr
+							td Домодедово (Москва)
+							td.table-arr
+								input.transfer__table-date(type="text" value="26.05.2017")
+							td.table-arr.transfer__table-select--wrapper
+								select.transfer__table-select
+									option(value="1") E-класс с водителем
+									option(value="2") S-класс с водителем
+									option(value="3") C-класс с водителем
+									option(value="4") B-класс с водителем
+							td Третьяковская галерея
+							td 50 $
+							td
+								a(href="#") ЗАКАЗАТЬ
+			.our-fleet__text
+				.our-fleet__text-col
+					h4.our-fleet__text-title Lorem ipsum dolor sit amet, consectetur adipisicing
+					p.our-fleet__text-description Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+				.our-fleet__text-col
+					h4.our-fleet__text-title Lorem ipsum dolor sit amet, consectetur adipisicing
+					p.our-fleet__text-description Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+
+
+
+
+
+
+
+
+
+block inlineScripts

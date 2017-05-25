@@ -148,12 +148,26 @@ body {
 			display: block;
 			max-width: 100%;
 		}
+		.delete-row {
+			position: absolute;
+			right: -25px;
+			top: 17px;
+			width: 10px;
+			height: 10px;
+			background: url(../img/close.png) no-repeat;
+			background-size: cover;
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
 
 	}
 	&__passengers {
 		width: 90px;
 		position: relative;
 		padding-right: 0 !important;
+		position: relative;
 	}
 	&__date {
 		width: 135px;
@@ -227,6 +241,33 @@ body {
 			&.more-desire {
 				background: url(../img/add-text.png) left center no-repeat;
 			}
+		}
+	}
+	&__desire {
+		display: none;
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 10px 15px 15px 30px;
+			background-color: rgba(0,0,0,.2);
+			border: 1px solid hsla(0,0%,100%,.1);
+			outline: 0;
+			font-size: 14px;
+			color: #fff;
+			resize: none;
+			background-image: url(../img/add-text.png);
+			background-color: rgba(0, 0, 0, 0.2);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			background-position: left 7px top 11px;
+			background-repeat: no-repeat;
+			height: 84px;
+			&::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.6);}
+			&::-moz-placeholder          {color: rgba(255, 255, 255, 0.6);}
+			&:-moz-placeholder           {color: rgba(255, 255, 255, 0.6);}
+			&:-ms-input-placeholder      {color: rgba(255, 255, 255, 0.6);}
+		}
+		&.active {
+			display: block;
 		}
 	}
 }
@@ -389,7 +430,7 @@ body {
 	}
 }
 
-.home-fleet {
+.our-fleet {
 	.container {
 		overflow: hidden;
 	}
@@ -477,9 +518,64 @@ body {
 	}
 }
 
+.page-top {
+	padding: 150px 0 200px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
 
+.page__title {
+	color: #fff;
+	font: 100 60px $rw;
+	margin: 0 0 25px;
+	padding-bottom: 20px;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	&::after {
+		content: '';
+		width: 60px;
+		height: 2px;
+		background: #fff;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -30px;
+	}
+}
 
+.page__description {
+	max-width: 450px;
+	margin: auto;
+	color: #fff;
+	font: 400 18px $sf;
+}
 
+.our-fleet__text {
+	padding: 40px 0;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.our-fleet__text-col {
+	width: 48%;
+}
+
+.our-fleet__text-title {
+	font: 300 18px $rw;
+	color: #556670;
+	margin: 0 0 10px;
+}
+
+.our-fleet__text-description {
+	font: 400 14px $sf;
+	color: #404040;
+}
 
 
 

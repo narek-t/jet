@@ -1,0 +1,90 @@
+extends _layout
+block content
+	main.main-content
+		.container
+			.airplane__wrapper
+				.airplane__top
+					.airplane__sliders.airplane__col
+						.airplane__slider
+							.slick-slide(style="background-image: url(img/j1.png)")
+							.slick-slide(style="background-image: url(img/j2.jpg)")
+							.slick-slide(style="background-image: url(img/j3.jpg)")
+							.slick-slide(style="background-image: url(img/j4.jpg)")
+							.slick-slide(style="background-image: url(img/j5.jpg)")
+							.slick-slide(style="background-image: url(img/j6.jpg)")
+						.airplane__thumb
+							.slick-slide(style="background-image: url(img/j1.png)")
+							.slick-slide(style="background-image: url(img/j2.jpg)")
+							.slick-slide(style="background-image: url(img/j3.jpg)")
+							.slick-slide(style="background-image: url(img/j4.jpg)")
+							.slick-slide(style="background-image: url(img/j5.jpg)")
+							.slick-slide(style="background-image: url(img/j6.jpg)")
+					.airplane__content.airplane__col
+						h1.airplane__title Bombardier-Global-1000 Private Fly
+						p.airplane__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						p.airplane__popular-title Популярные направления:
+						table.airplane__popular
+							tr
+								td Ut enim – Minim veniam
+								td 5000 $
+							tr
+								td Ut enim – Minim veniam
+								td 5000 $
+							tr
+								td Ut enim – Minim veniam
+								td 5000 $
+							tr
+								td Ut enim – Minim veniam
+								td 5000 $
+						.airplane__order
+							a.btn.btn--blue(href="#") Заказать
+		.airplane__characteristics
+			.container
+				h2.airplane__characteristics-title Характеристики судна
+				img.airplane__characteristics-scheme(src="img/air-scheme.png", alt="")
+				ul.airplane__characteristics-list
+					li(style="background-image: url(img/card-pass-ico.png)") Пассажиров: 8 чел.
+					li(style="background-image: url(img/toil.png)") Наличие туалета: Да
+					li(style="background-image: url(img/stuardess.png)") Cтюардессы: 2 чел.
+					li(style="background-image: url(img/card-dist-ico.png)") Дальность: 3054 км.
+					li(style="background-image: url(img/card-speed-ico.png)") Скорость: 800 км/ч
+		.container.home-blocks
+			h2.simple-title Самолеты из категории
+			.flex.three-col
+				a.jet-card(href="#")
+					.jet-card__img(style="background-image: url(img/j1.png)")
+					.jet-card__inner
+						.jet-card__title Bombardier-Global-6000 Private Fly
+						.jet-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+						.jet-card__info
+							.jet-card__info-item.jet-card__info-passengers 8 чел
+							.jet-card__info-item.jet-card__info-distance 3000 км
+							.jet-card__info-item.jet-card__info-speed 800 км/ч
+				a.jet-card(href="#")
+					.jet-card__img(style="background-image: url(img/j2.jpg)")
+					.jet-card__inner
+						.jet-card__title Bombardier-Global-6000 Private Fly
+						.jet-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+						.jet-card__info
+							.jet-card__info-item.jet-card__info-passengers 8 чел
+							.jet-card__info-item.jet-card__info-distance 3000 км
+							.jet-card__info-item.jet-card__info-speed 800 км/ч
+				a.jet-card(href="#")
+					.jet-card__img(style="background-image: url(img/j3.jpg)")
+					.jet-card__inner
+						.jet-card__title Bombardier-Global-6000 Private Fly
+						.jet-card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+						.jet-card__info
+							.jet-card__info-item.jet-card__info-passengers 8 чел
+							.jet-card__info-item.jet-card__info-distance 3000 км
+							.jet-card__info-item.jet-card__info-speed 800 км/ч
+
+
+
+
+
+
+
+
+
+block inlineScripts

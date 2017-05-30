@@ -92,6 +92,15 @@ $sf: 'sf_ui__text';
 	}
 }
 
+.btn--blue {
+	color: #fff;
+	border-color: #168ab7;
+	background: #168ab7;
+	&:hover {
+		background: #177194;
+	}
+}
+
 .simple-title {
 	margin: 0 0 60px;
 	text-align: center;

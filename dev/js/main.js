@@ -92,4 +92,16 @@ $(document).ready(function() {
 		});
 	}
 
+	$('.aero__item-slick').slick();
+	$('.airplane__slider').slick({
+		arrows: false,
+		asNavFor: '.airplane__thumb'
+	});
+	$('.airplane__thumb').slick({
+		arrows: false,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		focusOnSelect: true,
+		asNavFor: '.airplane__slider',
+	});
 });

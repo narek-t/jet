@@ -875,6 +875,7 @@ table.dataTable.sortable-table {
 .about__top {
 	background: #f5f5f5;
 	padding: 30px;
+	margin-top: 40px;
 	p {
 		font: 400 14px $sf;
 		color: #666666;
@@ -1138,7 +1139,7 @@ table.dataTable.sortable-table {
 			flex-wrap: wrap;
 			li {
 				background-repeat: no-repeat;
-				background-position: left top 3px;
+				background-position: left center;
 				padding-left: 25px;
 				width: 20%;
 				margin-bottom: 20px;
